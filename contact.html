@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Shumaya Jannat Hera</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo" viewBox="0 0 100 100" role="img" aria-label="SJH circle logo">
+          <circle cx="50" cy="50" r="45" fill="#16303a"></circle>
+          <circle cx="50" cy="50" r="45" fill="none" stroke="#0f8b8d" stroke-width="5"></circle>
+          <text x="50" y="59" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#9fd8d4">SJH</text>
+        </svg>
+        <span class="brand-name">Shumaya Jannat Hera</span>
+      </a>
+      <button class="nav-toggle" aria-label="Show menu">&#9776;</button>
+      <nav class="site-nav">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-heading">Get In Touch</h1>
+    <p class="page-sub">
+      Thank you for visiting my portfolio. If you would like to learn more about my projects,
+      education, or technical skills, feel free to get in touch with me. I welcome the opportunity
+      to connect and communicate about software development, web development, artificial
+      intelligence, and technology-related projects.
+    </p>
+
+    <!-- Contact information strip -->
+    <section class="contact-strip">
+      <h2>Contact Information</h2>
+      <div class="item"><span class="label">Name</span><strong>Shumaya Jannat Hera</strong></div>
+      <div class="item"><span class="label">Location</span><strong>Toronto, Ontario</strong></div>
+      <div class="item"><span class="label">Phone</span><a href="tel:4374454787">437-445-4787</a></div>
+      <div class="item"><span class="label">Email</span><a href="mailto:mhera@my.centennialcollege.ca">mhera@my.centennialcollege.ca</a></div>
+    </section>
+
+    <!-- Interactive message form -->
+    <section class="panel form-panel">
+      <h2>Send Me a Message</h2>
+      <form id="message-form" action="index.html" method="get">
+        <div class="two-col">
+          <div class="field">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="contactNumber">Contact Number *</label>
+          <input type="tel" id="contactNumber" name="contactNumber" required>
+        </div>
+        <div class="field">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="copyright-year"></span> Shumaya Jannat Hera &middot; Toronto, Ontario</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
